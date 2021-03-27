@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+    
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    background: radial-gradient(#fff,#ededed);
+    height:50px;
+    padding: 15px;
+    font-size: 18px;   
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #555;
+}
+
+p{
+    color: #555;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.container > .nav-top{
+    max-width: 1400px;
+}
+
+.row-top{
+    align-items: center;
+    text-align: center;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.dog-section{
+    text-align: center;
+}
+
+.inner-width{
+    max-width: 1200px;
+    margin:auto;
+    padding:20px;
+    color: #333;
+    overflow: hidden;
+}
+
+.pe{
+    float: left;
+    width: calc(100% / 3);
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+.pe img{
+    width:350px;
+    height: 270px;
+    transition: 0.5s;
+}
+
+.pe img:hover{
+    transform: scale(1.2);
+}
+
+.p-des{
+    margin: 16px 0;
+    text-align: left;
+}
+
+.p-name{
+    font-style: italic;
+    font-size:20px;
+}
+
+
+
+.footer{
+    background: #000;
+    color: lightgray;
+    font-size: 14px;
+    padding: 20px 0 10px;
+    opacity: 0.8;
+
+}
+
+.footer p{
+    color: lightgray;
+    font-size: 18px;
+    text-align: center;
+}
+
+.footer h3{
+    text-align: center;
+}
+
+.footer-col-2 > a > img{
+    width: 80px;
+    margin-bottom: 10px;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom:20px;
+}
+
+.footer-col-1, .footer-col-2 {
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
