@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luv Pet</title>
+    <link rel="stylesheet" href="css/hot.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
+<style>
+    div.item:nth-child(1) { background:#fff; }
+    div.item:nth-child(2) { background: #fff; }
+    div.item:nth-child(3) { background-color: #fff; }
+</style>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+    $(document).ready(function () {
+        var width = $('[data-role="slider"]').attr('data-width');
+        var height = $('[data-role="slider"]').attr('data-height');
+        var count = $('[data-role="slider"] div.item').length;
+
+        $('[data-role="slider"]').css({
+            position: 'relative',
+            overflow: 'hidden',
+            width: width,
+            height: height
+        }).find('.container2').css({
+            position: 'absolute',
+            width: count * width,
+            overflow: 'hidden'
+        }).find('.item').css({
+            width: width,
+            height: height,
+            float: 'left'
+        });
+
+        var currentPage = 0;
+        var changePage = function () {
+            $('[data-role="slider"] > .container2').animate({
+                left: -currentPage * width
+            }, 1350);
+        };
+
+        $('#left-button').click(function () {
+            if(currentPage > 0) {
+                currentPage = currentPage - 1;
+                changePage();
+            }
+        });
+
+        $('#right-button').click(function () {
+            if (currentPage < count - 1) {
+                currentPage = currentPage + 1;
+                changePage();
+            }
+        });
+    });
+</script>
+</head>
+<body>
+
+    <div class="header">
+    <div class="container">
+        <div class="nav-top">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" width="100px"></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="dictionary.html">Dictionary</a></li>
+                        <div class="dropdown">
+                            <li><a id="myBtn" class="dropbtn">Information</a></li>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="information.html">Dog</a>
+                                <a href="info_cat.html">Cat</a>
+                                <a href="info_another.html">Another</a>
+                              </div>
+                        </div>  
+                        <li><a href="notice.html">Notice</a></li>
+                        <li style="font-weight: bold;"><a href="hot.html">Hot</a></li>
+                        <li><a href="registration.html">Registration</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+                <img src="images/pen.png" width="50px" height="50px">
+            </div>
+        </div>
+        <div class="row-top">
+            <div class="col-2">
+                <h1>Hot contents!</h1>
+                <p>
+                    This will help you get useful information about your pet!
+                </p>
+            </div>
+
+            <div class="col-2">
+                <div data-role="slider" data-width="1350" data-height="550">
+                    <div class="container2" style="margin-bottom:0px;">
+                        <div class="item">
+                            <img src="images/hot-choco.jpg">
+                            <h2 style="font-size:30px;">강아지가 당신을 사랑한다는 신호 4가지</h2>
+                            <p>강아지와 주인의 유대감, 신뢰감이 높은 경우 강아지는 주인과 같은 공간에 있는 것만으로 마음이 편해진다. <br>
+                                강아지가 긴장이 풀려 마음이 편하고, 기분이 좋을 때는 다음과 같은 행동을 하게 된다.
+                            </p>
+                        </div>
+                        <div class="item">
+                            <img src="images/image3.jpg">
+                            <h2 style="font-size:30px;">강아지가 좋아하는 사람을 고르는 방법은?</h2>
+                            <p>과연 강아지가 좋아하는 사람을 고르는 방법은 무엇일까?</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/image4.jpg">
+                            <h2 style="font-size:30px;">고양이, 집사 바보 취급할 때의 행동은?</h2>
+                            <p>야생에서 단독 생활을 하는 고양이는 기본적으로 복종에 대한 개념이 없다. <br>
+                            따라서 집사와의 생활에서도 집사를 주인이라고 생각하기 보다는 엄마 또는 동료라고 생각한다.
+                        </div>
+                    </div>
+                </div>
+                <button id="left-button" class="btn">←</button>
+                <button id="right-button" class="btn">→</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+
+
+<div class="small-container">
+    <div class="row">
+            <div class="col-4">
+                <img src="images/image2.jpg">
+                <h3>강아지가 당신을 사랑한다는 신호 4가지</h3>
+                <a href="https://mypetlife.co.kr/8926/">
+                <p>자세한 정보</p>
+                </a>
+            </div>
+        <div class="col-4">
+            <img src="images/image3.jpg">
+            <h3>강아지가 좋아하는 사람을 고르는 방법은?</h3>
+            <a href="https://mypetlife.co.kr/64946/">
+            <p>자세한 정보</p>
+            </a>
+        </div>
+        <div class="col-4">
+            <img src="images/image4.jpg">
+            <h3>고양이, 집사 바보 취급할 때의 행동은?</h3>
+            <a href="https://mypetlife.co.kr/64198/">
+            <p>자세한 정보</p>
+            </a>
+        </div>
+        <div class="col-4">
+            <img src="images/cat_hot1.jpg">
+            <h3>화난 고양이에게 해서는 안 되는 행동</h3>
+            <a href="https://m.post.naver.com/viewer/postView.nhn?volumeNo=27822333">
+            <p>자세한 정보</p>
+            </a>
+        </div>
+        <div class="col-4">
+            <img src="images/hot_cat2.jpg">
+            <h3>고양이 집사가 흔히 하는 7가지 실수</h3>
+            <a href="https://binubaguni.tistory.com/150">
+            <p>자세한 정보</p>
+            </a>
+        </div>
+        <div class="col-4">
+            <img src="images/image5.jpg">
+            <h3>강아지들이 제일 싫어하는 주인의 8가지 행동</h3>
+            <a href="https://www.animalplanet.co.kr/news/?artNo=9943">
+            <p>자세한 정보</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+    
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>@ Copyright - 20171538 김율희</h3>
+                    <p>
+                        I love your pet's life! My goal is to make your pet happy.
+                    </p>
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <a href="https://github.com/yulhee741"><img src="images/git.png"></a>
+                <h3><a href="https://github.com/yulhee741">github.com/yulhee741</a></h3>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("myBtn").onclick = function() {myFunction()};
+        
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
