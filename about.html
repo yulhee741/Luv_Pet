@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luv Pet</title>
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="100px"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dictionary.html">Dictionary</a></li>
+                    <div class="dropdown">
+                        <li><a id="myBtn" class="dropbtn">Information</a></li>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="information.html">Dog</a>
+                            <a href="info_cat.html">Cat</a>
+                            <a href="info_another.html">Another</a>
+                          </div>
+                    </div>  
+                    <li><a href="notice.html">Notice</a></li>
+                    <li><a href="hot.html">Hot</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                    <li style="font-weight: bold;"><a href="about.html">About</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+            <img src="images/pen.png" width="50px" height="50px">
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>About</h1>
+                <p>
+                    반려동물 백과사전 페이지입니다. <br>
+                    여러 정보를 얻으며 여러분들의 반려동물을 더 행복하게 만들어요!
+                </p>
+            </div>
+            <div class="col-2">
+                <img src="images/about1.jpg">      
+                <h2>
+                    Developer on this page
+                </h2>
+                <a href="https://www.instagram.com/yulludy/" class="btn">Instargram</a>
+            </div>
+
+            <div class="col-2">
+                <img src="images/duboo1.jpg">
+                <img src="images/dubbo2.jpg">  
+                <img src="images/duboo3.jpg">        
+                <h2 style="font-family: 'Nanum Gothic', sans-serif;">
+                    제가 키우는 강아지는 두부입니다
+                </h2>
+                <p class="duboo"><br>
+                    2017년생<br>
+                    <br>
+                    <hr style="border: solid 1px lightgray; width: 250px; margin:auto;">
+                    수컷<br>
+                    <br>
+                    <hr style="border: solid 1px lightgray; width: 250px; margin:auto;">
+                    식탐이 매우 많음 <br>
+                    &emsp;사람을 너무 좋아함<br>
+                    &emsp;나를 제일 사랑함<br>
+                    &emsp;간식 먹을 때 건들이면 화냄<br>
+                    &emsp;인형가지고 노는 것을 좋아함.<br>
+                    <br>
+                    <hr style="border: solid 1px lightgray; width: 250px; margin:auto;">
+                </p>
+                <a href="https://www.instagram.com/dubooang/" class="btn">duboo's Instargram</a>
+            </div>
+            <br> 
+            <br>
+        </div>
+    </div>
+</div>
+    
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>@ Copyright - 20171538 김율희</h3>
+                    <p>
+                        I love your pet's life! My goal is to make your pet happy.
+                    </p>
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <a href="https://github.com/yulhee741"><img src="images/git.png"></a>
+                <h3><a href="https://github.com/yulhee741">github.com/yulhee741</a></h3>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("myBtn").onclick = function() {myFunction()};
+        
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
